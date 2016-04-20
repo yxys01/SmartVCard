@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C1C34071CC76A07001EFB1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C34061CC76A07001EFB1F /* main.m */; };
+		5C1C340A1CC76A07001EFB1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C34091CC76A07001EFB1F /* AppDelegate.m */; };
+		5C1C340D1CC76A07001EFB1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C340C1CC76A07001EFB1F /* ViewController.m */; };
+		5C1C34101CC76A07001EFB1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C340E1CC76A07001EFB1F /* Main.storyboard */; };
+		5C1C34121CC76A07001EFB1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C34111CC76A07001EFB1F /* Assets.xcassets */; };
+		5C1C34151CC76A07001EFB1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C34131CC76A07001EFB1F /* LaunchScreen.storyboard */; };
+		5C1C34201CC76A07001EFB1F /* SmartVCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C341F1CC76A07001EFB1F /* SmartVCardTests.m */; };
+		5C1C342B1CC76A07001EFB1F /* SmartVCardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C342A1CC76A07001EFB1F /* SmartVCardUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C1C341C1CC76A07001EFB1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C1C33FA1CC76A06001EFB1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C1C34011CC76A06001EFB1F;
+			remoteInfo = SmartVCard;
+		};
+		5C1C34271CC76A07001EFB1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C1C33FA1CC76A06001EFB1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C1C34011CC76A06001EFB1F;
+			remoteInfo = SmartVCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5C1C34021CC76A06001EFB1F /* SmartVCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartVCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1C34061CC76A07001EFB1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C1C34081CC76A07001EFB1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5C1C34091CC76A07001EFB1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5C1C340B1CC76A07001EFB1F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5C1C340C1CC76A07001EFB1F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5C1C340F1CC76A07001EFB1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C1C34111CC76A07001EFB1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C1C34141CC76A07001EFB1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C1C34161CC76A07001EFB1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C1C341B1CC76A07001EFB1F /* SmartVCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartVCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1C341F1CC76A07001EFB1F /* SmartVCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartVCardTests.m; sourceTree = "<group>"; };
+		5C1C34211CC76A07001EFB1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C1C34261CC76A07001EFB1F /* SmartVCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartVCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1C342A1CC76A07001EFB1F /* SmartVCardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartVCardUITests.m; sourceTree = "<group>"; };
+		5C1C342C1CC76A07001EFB1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C1C33FF1CC76A06001EFB1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1C34181CC76A07001EFB1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1C34231CC76A07001EFB1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C1C33F91CC76A06001EFB1F = {
+			isa = PBXGroup;
+			children = (
+				5C1C34041CC76A07001EFB1F /* SmartVCard */,
+				5C1C341E1CC76A07001EFB1F /* SmartVCardTests */,
+				5C1C34291CC76A07001EFB1F /* SmartVCardUITests */,
+				5C1C34031CC76A06001EFB1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C1C34031CC76A06001EFB1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C1C34021CC76A06001EFB1F /* SmartVCard.app */,
+				5C1C341B1CC76A07001EFB1F /* SmartVCardTests.xctest */,
+				5C1C34261CC76A07001EFB1F /* SmartVCardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C1C34041CC76A07001EFB1F /* SmartVCard */ = {
+			isa = PBXGroup;
+			children = (
+				5C1C34081CC76A07001EFB1F /* AppDelegate.h */,
+				5C1C34091CC76A07001EFB1F /* AppDelegate.m */,
+				5C1C340B1CC76A07001EFB1F /* ViewController.h */,
+				5C1C340C1CC76A07001EFB1F /* ViewController.m */,
+				5C1C340E1CC76A07001EFB1F /* Main.storyboard */,
+				5C1C34111CC76A07001EFB1F /* Assets.xcassets */,
+				5C1C34131CC76A07001EFB1F /* LaunchScreen.storyboard */,
+				5C1C34161CC76A07001EFB1F /* Info.plist */,
+				5C1C34051CC76A07001EFB1F /* Supporting Files */,
+			);
+			path = SmartVCard;
+			sourceTree = "<group>";
+		};
+		5C1C34051CC76A07001EFB1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C1C34061CC76A07001EFB1F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C1C341E1CC76A07001EFB1F /* SmartVCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C1C341F1CC76A07001EFB1F /* SmartVCardTests.m */,
+				5C1C34211CC76A07001EFB1F /* Info.plist */,
+			);
+			path = SmartVCardTests;
+			sourceTree = "<group>";
+		};
+		5C1C34291CC76A07001EFB1F /* SmartVCardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C1C342A1CC76A07001EFB1F /* SmartVCardUITests.m */,
+				5C1C342C1CC76A07001EFB1F /* Info.plist */,
+			);
+			path = SmartVCardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C1C34011CC76A06001EFB1F /* SmartVCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C1C342F1CC76A07001EFB1F /* Build configuration list for PBXNativeTarget "SmartVCard" */;
+			buildPhases = (
+				5C1C33FE1CC76A06001EFB1F /* Sources */,
+				5C1C33FF1CC76A06001EFB1F /* Frameworks */,
+				5C1C34001CC76A06001EFB1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartVCard;
+			productName = SmartVCard;
+			productReference = 5C1C34021CC76A06001EFB1F /* SmartVCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C1C341A1CC76A07001EFB1F /* SmartVCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C1C34321CC76A07001EFB1F /* Build configuration list for PBXNativeTarget "SmartVCardTests" */;
+			buildPhases = (
+				5C1C34171CC76A07001EFB1F /* Sources */,
+				5C1C34181CC76A07001EFB1F /* Frameworks */,
+				5C1C34191CC76A07001EFB1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C1C341D1CC76A07001EFB1F /* PBXTargetDependency */,
+			);
+			name = SmartVCardTests;
+			productName = SmartVCardTests;
+			productReference = 5C1C341B1CC76A07001EFB1F /* SmartVCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5C1C34251CC76A07001EFB1F /* SmartVCardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C1C34351CC76A07001EFB1F /* Build configuration list for PBXNativeTarget "SmartVCardUITests" */;
+			buildPhases = (
+				5C1C34221CC76A07001EFB1F /* Sources */,
+				5C1C34231CC76A07001EFB1F /* Frameworks */,
+				5C1C34241CC76A07001EFB1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C1C34281CC76A07001EFB1F /* PBXTargetDependency */,
+			);
+			name = SmartVCardUITests;
+			productName = SmartVCardUITests;
+			productReference = 5C1C34261CC76A07001EFB1F /* SmartVCardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C1C33FA1CC76A06001EFB1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "夏天";
+				TargetAttributes = {
+					5C1C34011CC76A06001EFB1F = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					5C1C341A1CC76A07001EFB1F = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 5C1C34011CC76A06001EFB1F;
+					};
+					5C1C34251CC76A07001EFB1F = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 5C1C34011CC76A06001EFB1F;
+					};
+				};
+			};
+			buildConfigurationList = 5C1C33FD1CC76A06001EFB1F /* Build configuration list for PBXProject "SmartVCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C1C33F91CC76A06001EFB1F;
+			productRefGroup = 5C1C34031CC76A06001EFB1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C1C34011CC76A06001EFB1F /* SmartVCard */,
+				5C1C341A1CC76A07001EFB1F /* SmartVCardTests */,
+				5C1C34251CC76A07001EFB1F /* SmartVCardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C1C34001CC76A06001EFB1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1C34151CC76A07001EFB1F /* LaunchScreen.storyboard in Resources */,
+				5C1C34121CC76A07001EFB1F /* Assets.xcassets in Resources */,
+				5C1C34101CC76A07001EFB1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1C34191CC76A07001EFB1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1C34241CC76A07001EFB1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C1C33FE1CC76A06001EFB1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1C340D1CC76A07001EFB1F /* ViewController.m in Sources */,
+				5C1C340A1CC76A07001EFB1F /* AppDelegate.m in Sources */,
+				5C1C34071CC76A07001EFB1F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1C34171CC76A07001EFB1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1C34201CC76A07001EFB1F /* SmartVCardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1C34221CC76A07001EFB1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1C342B1CC76A07001EFB1F /* SmartVCardUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C1C341D1CC76A07001EFB1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C1C34011CC76A06001EFB1F /* SmartVCard */;
+			targetProxy = 5C1C341C1CC76A07001EFB1F /* PBXContainerItemProxy */;
+		};
+		5C1C34281CC76A07001EFB1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C1C34011CC76A06001EFB1F /* SmartVCard */;
+			targetProxy = 5C1C34271CC76A07001EFB1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5C1C340E1CC76A07001EFB1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C1C340F1CC76A07001EFB1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C1C34131CC76A07001EFB1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C1C34141CC76A07001EFB1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C1C342D1CC76A07001EFB1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5C1C342E1CC76A07001EFB1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C1C34301CC76A07001EFB1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartVCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.SmartVCard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5C1C34311CC76A07001EFB1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartVCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.SmartVCard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5C1C34331CC76A07001EFB1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartVCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.SmartVCardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartVCard.app/SmartVCard";
+			};
+			name = Debug;
+		};
+		5C1C34341CC76A07001EFB1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartVCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.SmartVCardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartVCard.app/SmartVCard";
+			};
+			name = Release;
+		};
+		5C1C34361CC76A07001EFB1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SmartVCardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.SmartVCardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmartVCard;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		5C1C34371CC76A07001EFB1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SmartVCardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "--.SmartVCardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmartVCard;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C1C33FD1CC76A06001EFB1F /* Build configuration list for PBXProject "SmartVCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C1C342D1CC76A07001EFB1F /* Debug */,
+				5C1C342E1CC76A07001EFB1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C1C342F1CC76A07001EFB1F /* Build configuration list for PBXNativeTarget "SmartVCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C1C34301CC76A07001EFB1F /* Debug */,
+				5C1C34311CC76A07001EFB1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5C1C34321CC76A07001EFB1F /* Build configuration list for PBXNativeTarget "SmartVCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C1C34331CC76A07001EFB1F /* Debug */,
+				5C1C34341CC76A07001EFB1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5C1C34351CC76A07001EFB1F /* Build configuration list for PBXNativeTarget "SmartVCardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C1C34361CC76A07001EFB1F /* Debug */,
+				5C1C34371CC76A07001EFB1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C1C33FA1CC76A06001EFB1F /* Project object */;
+}
