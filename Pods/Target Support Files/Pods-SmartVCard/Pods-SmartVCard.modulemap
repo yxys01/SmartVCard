@@ -1,0 +1,6 @@
+framework module Pods_SmartVCard {
+  umbrella header "Pods-SmartVCard-umbrella.h"
+
+  export *
+  module * { export * }
+}

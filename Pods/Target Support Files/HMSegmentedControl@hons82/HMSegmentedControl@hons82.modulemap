@@ -1,0 +1,6 @@
+framework module HMSegmentedControl_hons82 {
+  umbrella header "HMSegmentedControl@hons82-umbrella.h"
+
+  export *
+  module * { export * }
+}

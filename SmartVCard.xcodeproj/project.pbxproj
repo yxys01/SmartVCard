@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C15BA4C1D2F367B006666C0 /* MyCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C15BA4B1D2F367B006666C0 /* MyCard.storyboard */; };
+		5C15BA4E1D2F3845006666C0 /* CardCollect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C15BA4D1D2F3845006666C0 /* CardCollect.storyboard */; };
+		5C15BA501D2F38B5006666C0 /* CardReceiveAndSend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C15BA4F1D2F38B5006666C0 /* CardReceiveAndSend.storyboard */; };
+		5C15BA521D2F3909006666C0 /* User&Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C15BA511D2F3909006666C0 /* User&Setting.storyboard */; };
+		5C15BA541D2F39A6006666C0 /* CardScanning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C15BA531D2F39A6006666C0 /* CardScanning.storyboard */; };
+		5C15BA611D333224006666C0 /* SCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C15BA601D333224006666C0 /* SCTabBarController.m */; };
+		5C15BA681D333369006666C0 /* TabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C15BA671D333369006666C0 /* TabBarView.m */; };
+		5C15BA6B1D3333BA006666C0 /* MKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C15BA6A1D3333BA006666C0 /* MKButton.m */; };
+		5C15BA6E1D333A66006666C0 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C15BA6D1D333A66006666C0 /* Common.m */; };
+		5C15BA711D3369AF006666C0 /* SCUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C15BA701D3369AF006666C0 /* SCUserDefaults.m */; };
+		5C15BA741D336E1E006666C0 /* SCVisualEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C15BA731D336E1E006666C0 /* SCVisualEffectView.m */; };
+		5C15BA771D336EAB006666C0 /* SCVisualEffectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C15BA761D336EAB006666C0 /* SCVisualEffectButton.m */; };
 		5C1C34071CC76A07001EFB1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C34061CC76A07001EFB1F /* main.m */; };
 		5C1C340A1CC76A07001EFB1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C34091CC76A07001EFB1F /* AppDelegate.m */; };
 		5C1C340D1CC76A07001EFB1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C340C1CC76A07001EFB1F /* ViewController.m */; };
@@ -15,6 +27,60 @@
 		5C1C34151CC76A07001EFB1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1C34131CC76A07001EFB1F /* LaunchScreen.storyboard */; };
 		5C1C34201CC76A07001EFB1F /* SmartVCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C341F1CC76A07001EFB1F /* SmartVCardTests.m */; };
 		5C1C342B1CC76A07001EFB1F /* SmartVCardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C342A1CC76A07001EFB1F /* SmartVCardUITests.m */; };
+		5C406ABB1D37643D00794D90 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406ABA1D37643D00794D90 /* UserInfo.m */; };
+		5C406ABE1D37672F00794D90 /* SCDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406ABD1D37672F00794D90 /* SCDBHelper.m */; };
+		5C406AD41D37683100794D90 /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406AC21D37683100794D90 /* MJArgument.m */; };
+		5C406AD51D37683100794D90 /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406AC51D37683100794D90 /* MJIvar.m */; };
+		5C406AD61D37683100794D90 /* MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406AC71D37683100794D90 /* MJMember.m */; };
+		5C406AD71D37683100794D90 /* MJMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406AC91D37683100794D90 /* MJMethod.m */; };
+		5C406AD81D37683100794D90 /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406ACB1D37683100794D90 /* MJType.m */; };
+		5C406AD91D37683100794D90 /* MJTypeEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406ACD1D37683100794D90 /* MJTypeEncoding.m */; };
+		5C406ADA1D37683100794D90 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406ACF1D37683100794D90 /* NSObject+MJCoding.m */; };
+		5C406ADB1D37683100794D90 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406AD11D37683100794D90 /* NSObject+MJKeyValue.m */; };
+		5C406ADC1D37683100794D90 /* NSObject+MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406AD31D37683100794D90 /* NSObject+MJMember.m */; };
+		5C406ADF1D377E0F00794D90 /* SCClassUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406ADE1D377E0F00794D90 /* SCClassUtil.m */; };
+		5C406AE21D377FB900794D90 /* SCStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406AE11D377FB900794D90 /* SCStringUtil.m */; };
+		5C406AE91D3780F800794D90 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406AE51D3780F800794D90 /* MBProgressHUD+MJ.m */; };
+		5C406AEA1D3780F800794D90 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C406AE61D3780F800794D90 /* MBProgressHUD.bundle */; };
+		5C406AEB1D3780F800794D90 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406AE81D3780F800794D90 /* MBProgressHUD.m */; };
+		5C406AF11D3783EF00794D90 /* SCDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406AF01D3783EF00794D90 /* SCDeviceUtil.m */; };
+		5C406AF41D3784BC00794D90 /* SCJsonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406AF31D3784BC00794D90 /* SCJsonUtil.m */; };
+		5C406AFE1D38D54700794D90 /* SCUserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406AFD1D38D54700794D90 /* SCUserTableViewController.m */; };
+		5C406B001D38D85900794D90 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C406AFF1D38D85900794D90 /* Setting.storyboard */; };
+		5C406B031D38D97600794D90 /* SCSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B021D38D97600794D90 /* SCSettingTableViewController.m */; };
+		5C406B061D3DD5B400794D90 /* SCAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B051D3DD5B400794D90 /* SCAboutViewController.m */; };
+		5C406B0F1D3E0E6400794D90 /* SCUserHelpListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B0E1D3E0E6400794D90 /* SCUserHelpListController.m */; };
+		5C406B151D3E110800794D90 /* SCUserHelpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B141D3E110800794D90 /* SCUserHelpCell.m */; };
+		5C406B211D3E15E500794D90 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B201D3E15E500794D90 /* UIView+SDExtension.m */; };
+		5C406B241D3E166A00794D90 /* SCScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B231D3E166A00794D90 /* SCScanViewController.m */; };
+		5C406B271D3E178D00794D90 /* SCMyCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B261D3E178D00794D90 /* SCMyCodeViewController.m */; };
+		5C406B2A1D3E18A300794D90 /* Scan_Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B291D3E18A300794D90 /* Scan_Card.m */; };
+		5C406B461D3E194500794D90 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C406B2C1D3E194500794D90 /* Info.plist */; };
+		5C406B471D3E194500794D90 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B2E1D3E194500794D90 /* MASCompositeConstraint.m */; };
+		5C406B481D3E194500794D90 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B311D3E194500794D90 /* MASConstraint.m */; };
+		5C406B491D3E194500794D90 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B331D3E194500794D90 /* MASConstraintMaker.m */; };
+		5C406B4A1D3E194500794D90 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B351D3E194500794D90 /* MASLayoutConstraint.m */; };
+		5C406B4B1D3E194500794D90 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B391D3E194500794D90 /* MASViewAttribute.m */; };
+		5C406B4C1D3E194500794D90 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B3B1D3E194500794D90 /* MASViewConstraint.m */; };
+		5C406B4D1D3E194500794D90 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B3D1D3E194500794D90 /* NSArray+MASAdditions.m */; };
+		5C406B4E1D3E194500794D90 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B401D3E194500794D90 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		5C406B4F1D3E194500794D90 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B421D3E194500794D90 /* View+MASAdditions.m */; };
+		5C406B501D3E194500794D90 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B451D3E194500794D90 /* ViewController+MASAdditions.m */; };
+		5C406B621D3E194D00794D90 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B521D3E194D00794D90 /* bitstream.c */; };
+		5C406B631D3E194D00794D90 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B541D3E194D00794D90 /* mask.c */; };
+		5C406B641D3E194D00794D90 /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B571D3E194D00794D90 /* QRCodeGenerator.m */; };
+		5C406B651D3E194D00794D90 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B581D3E194D00794D90 /* qrencode.c */; };
+		5C406B661D3E194D00794D90 /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B5A1D3E194D00794D90 /* qrinput.c */; };
+		5C406B671D3E194D00794D90 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B5C1D3E194D00794D90 /* qrspec.c */; };
+		5C406B681D3E194D00794D90 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B5E1D3E194D00794D90 /* rscode.c */; };
+		5C406B691D3E194D00794D90 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C406B601D3E194D00794D90 /* split.c */; };
+		5C406B6B1D3F1CFA00794D90 /* Login&Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C406B6A1D3F1CFA00794D90 /* Login&Register.storyboard */; };
+		5C406B6D1D3F50E600794D90 /* ModelGeneration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C406B6C1D3F50E600794D90 /* ModelGeneration.storyboard */; };
+		5CB9E4611D34CF7E00F61041 /* SCAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB9E4601D34CF7E00F61041 /* SCAnimatedTransitioning.m */; };
+		5CB9E4641D34D2B800F61041 /* SCBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB9E4631D34D2B800F61041 /* SCBehavior.m */; };
+		5CB9E4661D34E68D00F61041 /* message.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CB9E4651D34E68D00F61041 /* message.plist */; };
+		5CB9E46A1D34E84100F61041 /* SCContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB9E4691D34E84100F61041 /* SCContactViewController.m */; };
+		A7D4A42DE7B8A04E7ADC2DEA /* Pods_SmartVCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7730772F8E4B071F489C9F43 /* Pods_SmartVCard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +101,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C15BA4B1D2F367B006666C0 /* MyCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyCard.storyboard; sourceTree = "<group>"; };
+		5C15BA4D1D2F3845006666C0 /* CardCollect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CardCollect.storyboard; sourceTree = "<group>"; };
+		5C15BA4F1D2F38B5006666C0 /* CardReceiveAndSend.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CardReceiveAndSend.storyboard; sourceTree = "<group>"; };
+		5C15BA511D2F3909006666C0 /* User&Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "User&Setting.storyboard"; sourceTree = "<group>"; };
+		5C15BA531D2F39A6006666C0 /* CardScanning.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CardScanning.storyboard; sourceTree = "<group>"; };
+		5C15BA5F1D333224006666C0 /* SCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTabBarController.h; sourceTree = "<group>"; };
+		5C15BA601D333224006666C0 /* SCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTabBarController.m; sourceTree = "<group>"; };
+		5C15BA661D333369006666C0 /* TabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarView.h; path = Assets.xcassets/TabBarView.h; sourceTree = "<group>"; };
+		5C15BA671D333369006666C0 /* TabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarView.m; path = Assets.xcassets/TabBarView.m; sourceTree = "<group>"; };
+		5C15BA691D3333BA006666C0 /* MKButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKButton.h; sourceTree = "<group>"; };
+		5C15BA6A1D3333BA006666C0 /* MKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKButton.m; sourceTree = "<group>"; };
+		5C15BA6C1D333A66006666C0 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		5C15BA6D1D333A66006666C0 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		5C15BA6F1D3369AF006666C0 /* SCUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserDefaults.h; sourceTree = "<group>"; };
+		5C15BA701D3369AF006666C0 /* SCUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserDefaults.m; sourceTree = "<group>"; };
+		5C15BA721D336E1E006666C0 /* SCVisualEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCVisualEffectView.h; sourceTree = "<group>"; };
+		5C15BA731D336E1E006666C0 /* SCVisualEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCVisualEffectView.m; sourceTree = "<group>"; };
+		5C15BA751D336EAB006666C0 /* SCVisualEffectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCVisualEffectButton.h; sourceTree = "<group>"; };
+		5C15BA761D336EAB006666C0 /* SCVisualEffectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCVisualEffectButton.m; sourceTree = "<group>"; };
 		5C1C34021CC76A06001EFB1F /* SmartVCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartVCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1C34061CC76A07001EFB1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5C1C34081CC76A07001EFB1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +136,116 @@
 		5C1C34261CC76A07001EFB1F /* SmartVCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartVCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1C342A1CC76A07001EFB1F /* SmartVCardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartVCardUITests.m; sourceTree = "<group>"; };
 		5C1C342C1CC76A07001EFB1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C406AB91D37643D00794D90 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		5C406ABA1D37643D00794D90 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		5C406ABC1D37672F00794D90 /* SCDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDBHelper.h; sourceTree = "<group>"; };
+		5C406ABD1D37672F00794D90 /* SCDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDBHelper.m; sourceTree = "<group>"; };
+		5C406AC11D37683100794D90 /* MJArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJArgument.h; sourceTree = "<group>"; };
+		5C406AC21D37683100794D90 /* MJArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJArgument.m; sourceTree = "<group>"; };
+		5C406AC31D37683100794D90 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		5C406AC41D37683100794D90 /* MJIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJIvar.h; sourceTree = "<group>"; };
+		5C406AC51D37683100794D90 /* MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJIvar.m; sourceTree = "<group>"; };
+		5C406AC61D37683100794D90 /* MJMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMember.h; sourceTree = "<group>"; };
+		5C406AC71D37683100794D90 /* MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMember.m; sourceTree = "<group>"; };
+		5C406AC81D37683100794D90 /* MJMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMethod.h; sourceTree = "<group>"; };
+		5C406AC91D37683100794D90 /* MJMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMethod.m; sourceTree = "<group>"; };
+		5C406ACA1D37683100794D90 /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		5C406ACB1D37683100794D90 /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		5C406ACC1D37683100794D90 /* MJTypeEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTypeEncoding.h; sourceTree = "<group>"; };
+		5C406ACD1D37683100794D90 /* MJTypeEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTypeEncoding.m; sourceTree = "<group>"; };
+		5C406ACE1D37683100794D90 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		5C406ACF1D37683100794D90 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		5C406AD01D37683100794D90 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		5C406AD11D37683100794D90 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		5C406AD21D37683100794D90 /* NSObject+MJMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJMember.h"; sourceTree = "<group>"; };
+		5C406AD31D37683100794D90 /* NSObject+MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJMember.m"; sourceTree = "<group>"; };
+		5C406ADD1D377E0F00794D90 /* SCClassUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCClassUtil.h; sourceTree = "<group>"; };
+		5C406ADE1D377E0F00794D90 /* SCClassUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCClassUtil.m; sourceTree = "<group>"; };
+		5C406AE01D377FB900794D90 /* SCStringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCStringUtil.h; sourceTree = "<group>"; };
+		5C406AE11D377FB900794D90 /* SCStringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCStringUtil.m; sourceTree = "<group>"; };
+		5C406AE41D3780F800794D90 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		5C406AE51D3780F800794D90 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		5C406AE61D3780F800794D90 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		5C406AE71D3780F800794D90 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		5C406AE81D3780F800794D90 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		5C406AEF1D3783EF00794D90 /* SCDeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDeviceUtil.h; sourceTree = "<group>"; };
+		5C406AF01D3783EF00794D90 /* SCDeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDeviceUtil.m; sourceTree = "<group>"; };
+		5C406AF21D3784BC00794D90 /* SCJsonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCJsonUtil.h; sourceTree = "<group>"; };
+		5C406AF31D3784BC00794D90 /* SCJsonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCJsonUtil.m; sourceTree = "<group>"; };
+		5C406AF81D38C91400794D90 /* WebImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebImage.h; sourceTree = "<group>"; };
+		5C406AFC1D38D54700794D90 /* SCUserTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserTableViewController.h; sourceTree = "<group>"; };
+		5C406AFD1D38D54700794D90 /* SCUserTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserTableViewController.m; sourceTree = "<group>"; };
+		5C406AFF1D38D85900794D90 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		5C406B011D38D97600794D90 /* SCSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSettingTableViewController.h; sourceTree = "<group>"; };
+		5C406B021D38D97600794D90 /* SCSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSettingTableViewController.m; sourceTree = "<group>"; };
+		5C406B041D3DD5B400794D90 /* SCAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAboutViewController.h; sourceTree = "<group>"; };
+		5C406B051D3DD5B400794D90 /* SCAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAboutViewController.m; sourceTree = "<group>"; };
+		5C406B0D1D3E0E6400794D90 /* SCUserHelpListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserHelpListController.h; sourceTree = "<group>"; };
+		5C406B0E1D3E0E6400794D90 /* SCUserHelpListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserHelpListController.m; sourceTree = "<group>"; };
+		5C406B131D3E110800794D90 /* SCUserHelpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserHelpCell.h; sourceTree = "<group>"; };
+		5C406B141D3E110800794D90 /* SCUserHelpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserHelpCell.m; sourceTree = "<group>"; };
+		5C406B1F1D3E15E500794D90 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		5C406B201D3E15E500794D90 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		5C406B221D3E166A00794D90 /* SCScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCScanViewController.h; sourceTree = "<group>"; };
+		5C406B231D3E166A00794D90 /* SCScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCScanViewController.m; sourceTree = "<group>"; };
+		5C406B251D3E178D00794D90 /* SCMyCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMyCodeViewController.h; sourceTree = "<group>"; };
+		5C406B261D3E178D00794D90 /* SCMyCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCMyCodeViewController.m; sourceTree = "<group>"; };
+		5C406B281D3E18A300794D90 /* Scan_Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scan_Card.h; sourceTree = "<group>"; };
+		5C406B291D3E18A300794D90 /* Scan_Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scan_Card.m; sourceTree = "<group>"; };
+		5C406B2C1D3E194500794D90 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C406B2D1D3E194500794D90 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		5C406B2E1D3E194500794D90 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		5C406B2F1D3E194500794D90 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		5C406B301D3E194500794D90 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		5C406B311D3E194500794D90 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		5C406B321D3E194500794D90 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		5C406B331D3E194500794D90 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		5C406B341D3E194500794D90 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		5C406B351D3E194500794D90 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		5C406B361D3E194500794D90 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		5C406B371D3E194500794D90 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		5C406B381D3E194500794D90 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		5C406B391D3E194500794D90 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		5C406B3A1D3E194500794D90 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		5C406B3B1D3E194500794D90 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		5C406B3C1D3E194500794D90 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		5C406B3D1D3E194500794D90 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		5C406B3E1D3E194500794D90 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		5C406B3F1D3E194500794D90 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		5C406B401D3E194500794D90 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		5C406B411D3E194500794D90 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		5C406B421D3E194500794D90 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		5C406B431D3E194500794D90 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		5C406B441D3E194500794D90 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		5C406B451D3E194500794D90 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		5C406B521D3E194D00794D90 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		5C406B531D3E194D00794D90 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		5C406B541D3E194D00794D90 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		5C406B551D3E194D00794D90 /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		5C406B561D3E194D00794D90 /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		5C406B571D3E194D00794D90 /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		5C406B581D3E194D00794D90 /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		5C406B591D3E194D00794D90 /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		5C406B5A1D3E194D00794D90 /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		5C406B5B1D3E194D00794D90 /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		5C406B5C1D3E194D00794D90 /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		5C406B5D1D3E194D00794D90 /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		5C406B5E1D3E194D00794D90 /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		5C406B5F1D3E194D00794D90 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		5C406B601D3E194D00794D90 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		5C406B611D3E194D00794D90 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		5C406B6A1D3F1CFA00794D90 /* Login&Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Login&Register.storyboard"; sourceTree = "<group>"; };
+		5C406B6C1D3F50E600794D90 /* ModelGeneration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ModelGeneration.storyboard; sourceTree = "<group>"; };
+		5CB9E45F1D34CF7E00F61041 /* SCAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAnimatedTransitioning.h; sourceTree = "<group>"; };
+		5CB9E4601D34CF7E00F61041 /* SCAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAnimatedTransitioning.m; sourceTree = "<group>"; };
+		5CB9E4621D34D2B800F61041 /* SCBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBehavior.h; sourceTree = "<group>"; };
+		5CB9E4631D34D2B800F61041 /* SCBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBehavior.m; sourceTree = "<group>"; };
+		5CB9E4651D34E68D00F61041 /* message.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = message.plist; sourceTree = "<group>"; };
+		5CB9E4681D34E84100F61041 /* SCContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCContactViewController.h; sourceTree = "<group>"; };
+		5CB9E4691D34E84100F61041 /* SCContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCContactViewController.m; sourceTree = "<group>"; };
+		7730772F8E4B071F489C9F43 /* Pods_SmartVCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartVCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5B31B3324CFA6E4848DF179 /* Pods-SmartVCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartVCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartVCard/Pods-SmartVCard.release.xcconfig"; sourceTree = "<group>"; };
+		FCFD74FF0CF113BC24E882DF /* Pods-SmartVCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartVCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartVCard/Pods-SmartVCard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +253,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7D4A42DE7B8A04E7ADC2DEA /* Pods_SmartVCard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +274,137 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C15BA491D2F3341006666C0 /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				5C15BA4A1D2F3357006666C0 /* Storyboard */,
+			);
+			name = Init;
+			sourceTree = "<group>";
+		};
+		5C15BA4A1D2F3357006666C0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5C1C340E1CC76A07001EFB1F /* Main.storyboard */,
+				5C15BA4B1D2F367B006666C0 /* MyCard.storyboard */,
+				5C15BA4D1D2F3845006666C0 /* CardCollect.storyboard */,
+				5C15BA4F1D2F38B5006666C0 /* CardReceiveAndSend.storyboard */,
+				5C15BA531D2F39A6006666C0 /* CardScanning.storyboard */,
+				5C15BA511D2F3909006666C0 /* User&Setting.storyboard */,
+				5C406AFF1D38D85900794D90 /* Setting.storyboard */,
+				5C406B6A1D3F1CFA00794D90 /* Login&Register.storyboard */,
+				5C406B6C1D3F50E600794D90 /* ModelGeneration.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		5C15BA551D2F532D006666C0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5C406ADD1D377E0F00794D90 /* SCClassUtil.h */,
+				5C406ADE1D377E0F00794D90 /* SCClassUtil.m */,
+				5C406AE01D377FB900794D90 /* SCStringUtil.h */,
+				5C406AE11D377FB900794D90 /* SCStringUtil.m */,
+				5C406AEF1D3783EF00794D90 /* SCDeviceUtil.h */,
+				5C406AF01D3783EF00794D90 /* SCDeviceUtil.m */,
+				5C406AF21D3784BC00794D90 /* SCJsonUtil.h */,
+				5C406AF31D3784BC00794D90 /* SCJsonUtil.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		5C15BA561D333096006666C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5C15BA571D3330AF006666C0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5C15BA6F1D3369AF006666C0 /* SCUserDefaults.h */,
+				5C15BA701D3369AF006666C0 /* SCUserDefaults.m */,
+				5C406ABC1D37672F00794D90 /* SCDBHelper.h */,
+				5C406ABD1D37672F00794D90 /* SCDBHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		5C15BA591D3330FA006666C0 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				5C406B161D3E13A200794D90 /* CardScan */,
+				5C406AB51D37392800794D90 /* Login&regist */,
+				5CB9E4671D34E7E800F61041 /* SCContact */,
+				5C15BA621D3332DE006666C0 /* Main */,
+				5C406AF91D38D2EF00794D90 /* User&Setting */,
+			);
+			name = Module;
+			sourceTree = "<group>";
+		};
+		5C15BA5B1D333128006666C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C15BA5F1D333224006666C0 /* SCTabBarController.h */,
+				5C15BA601D333224006666C0 /* SCTabBarController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5C15BA621D3332DE006666C0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5C15BA631D3332F1006666C0 /* Model */,
+				5C15BA641D333305006666C0 /* View */,
+				5C15BA651D333317006666C0 /* Controller */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		5C15BA631D3332F1006666C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CB9E45F1D34CF7E00F61041 /* SCAnimatedTransitioning.h */,
+				5CB9E4601D34CF7E00F61041 /* SCAnimatedTransitioning.m */,
+				5CB9E4621D34D2B800F61041 /* SCBehavior.h */,
+				5CB9E4631D34D2B800F61041 /* SCBehavior.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5C15BA641D333305006666C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C15BA661D333369006666C0 /* TabBarView.h */,
+				5C15BA671D333369006666C0 /* TabBarView.m */,
+				5C15BA691D3333BA006666C0 /* MKButton.h */,
+				5C15BA6A1D3333BA006666C0 /* MKButton.m */,
+				5C15BA721D336E1E006666C0 /* SCVisualEffectView.h */,
+				5C15BA731D336E1E006666C0 /* SCVisualEffectView.m */,
+				5C15BA751D336EAB006666C0 /* SCVisualEffectButton.h */,
+				5C15BA761D336EAB006666C0 /* SCVisualEffectButton.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5C15BA651D333317006666C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		5C1C33F91CC76A06001EFB1F = {
 			isa = PBXGroup;
 			children = (
 				5C1C34041CC76A07001EFB1F /* SmartVCard */,
 				5C1C341E1CC76A07001EFB1F /* SmartVCardTests */,
 				5C1C34291CC76A07001EFB1F /* SmartVCardUITests */,
+				5C406ABF1D3767EE00794D90 /* ThirdFrameworks */,
 				5C1C34031CC76A06001EFB1F /* Products */,
+				F2406CD6C5D7559555BCA2E6 /* Pods */,
+				919897CA8EF5953B8C0E2870 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +421,21 @@
 		5C1C34041CC76A07001EFB1F /* SmartVCard */ = {
 			isa = PBXGroup;
 			children = (
+				5C15BA491D2F3341006666C0 /* Init */,
 				5C1C34081CC76A07001EFB1F /* AppDelegate.h */,
 				5C1C34091CC76A07001EFB1F /* AppDelegate.m */,
+				5C15BA6C1D333A66006666C0 /* Common.h */,
+				5C15BA6D1D333A66006666C0 /* Common.m */,
 				5C1C340B1CC76A07001EFB1F /* ViewController.h */,
 				5C1C340C1CC76A07001EFB1F /* ViewController.m */,
-				5C1C340E1CC76A07001EFB1F /* Main.storyboard */,
 				5C1C34111CC76A07001EFB1F /* Assets.xcassets */,
 				5C1C34131CC76A07001EFB1F /* LaunchScreen.storyboard */,
 				5C1C34161CC76A07001EFB1F /* Info.plist */,
+				5C15BA551D2F532D006666C0 /* Utility */,
+				5C15BA561D333096006666C0 /* View */,
+				5C15BA571D3330AF006666C0 /* Helper */,
+				5C15BA591D3330FA006666C0 /* Module */,
+				5C15BA5B1D333128006666C0 /* Controller */,
 				5C1C34051CC76A07001EFB1F /* Supporting Files */,
 			);
 			path = SmartVCard;
@@ -118,6 +445,7 @@
 			isa = PBXGroup;
 			children = (
 				5C1C34061CC76A07001EFB1F /* main.m */,
+				5CB9E4651D34E68D00F61041 /* message.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +468,269 @@
 			path = SmartVCardUITests;
 			sourceTree = "<group>";
 		};
+		5C406AB51D37392800794D90 /* Login&regist */ = {
+			isa = PBXGroup;
+			children = (
+				5C406AB81D37395C00794D90 /* Model */,
+				5C406AB71D37395200794D90 /* View */,
+				5C406AB61D37393B00794D90 /* Controller */,
+			);
+			name = "Login&regist";
+			sourceTree = "<group>";
+		};
+		5C406AB61D37393B00794D90 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5C406AB71D37395200794D90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5C406AB81D37395C00794D90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C406AB91D37643D00794D90 /* UserInfo.h */,
+				5C406ABA1D37643D00794D90 /* UserInfo.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5C406ABF1D3767EE00794D90 /* ThirdFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C406B511D3E194D00794D90 /* libqrencode */,
+				5C406B2B1D3E194500794D90 /* Masonry */,
+				5C406AE31D3780F800794D90 /* MBProgressHUD */,
+				5C406AC01D37683100794D90 /* MJExtension */,
+				5C406AF81D38C91400794D90 /* WebImage.h */,
+			);
+			name = ThirdFrameworks;
+			path = SmartVCard;
+			sourceTree = "<group>";
+		};
+		5C406AC01D37683100794D90 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5C406AC11D37683100794D90 /* MJArgument.h */,
+				5C406AC21D37683100794D90 /* MJArgument.m */,
+				5C406AC31D37683100794D90 /* MJExtension.h */,
+				5C406AC41D37683100794D90 /* MJIvar.h */,
+				5C406AC51D37683100794D90 /* MJIvar.m */,
+				5C406AC61D37683100794D90 /* MJMember.h */,
+				5C406AC71D37683100794D90 /* MJMember.m */,
+				5C406AC81D37683100794D90 /* MJMethod.h */,
+				5C406AC91D37683100794D90 /* MJMethod.m */,
+				5C406ACA1D37683100794D90 /* MJType.h */,
+				5C406ACB1D37683100794D90 /* MJType.m */,
+				5C406ACC1D37683100794D90 /* MJTypeEncoding.h */,
+				5C406ACD1D37683100794D90 /* MJTypeEncoding.m */,
+				5C406ACE1D37683100794D90 /* NSObject+MJCoding.h */,
+				5C406ACF1D37683100794D90 /* NSObject+MJCoding.m */,
+				5C406AD01D37683100794D90 /* NSObject+MJKeyValue.h */,
+				5C406AD11D37683100794D90 /* NSObject+MJKeyValue.m */,
+				5C406AD21D37683100794D90 /* NSObject+MJMember.h */,
+				5C406AD31D37683100794D90 /* NSObject+MJMember.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		5C406AE31D3780F800794D90 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5C406AE41D3780F800794D90 /* MBProgressHUD+MJ.h */,
+				5C406AE51D3780F800794D90 /* MBProgressHUD+MJ.m */,
+				5C406AE61D3780F800794D90 /* MBProgressHUD.bundle */,
+				5C406AE71D3780F800794D90 /* MBProgressHUD.h */,
+				5C406AE81D3780F800794D90 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		5C406AF91D38D2EF00794D90 /* User&Setting */ = {
+			isa = PBXGroup;
+			children = (
+				5C406AFB1D38D32F00794D90 /* View */,
+				5C406AFA1D38D32A00794D90 /* Controller */,
+			);
+			name = "User&Setting";
+			sourceTree = "<group>";
+		};
+		5C406AFA1D38D32A00794D90 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C406AFC1D38D54700794D90 /* SCUserTableViewController.h */,
+				5C406AFD1D38D54700794D90 /* SCUserTableViewController.m */,
+				5C406B011D38D97600794D90 /* SCSettingTableViewController.h */,
+				5C406B021D38D97600794D90 /* SCSettingTableViewController.m */,
+				5C406B041D3DD5B400794D90 /* SCAboutViewController.h */,
+				5C406B051D3DD5B400794D90 /* SCAboutViewController.m */,
+				5C406B0D1D3E0E6400794D90 /* SCUserHelpListController.h */,
+				5C406B0E1D3E0E6400794D90 /* SCUserHelpListController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5C406AFB1D38D32F00794D90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C406B131D3E110800794D90 /* SCUserHelpCell.h */,
+				5C406B141D3E110800794D90 /* SCUserHelpCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5C406B161D3E13A200794D90 /* CardScan */ = {
+			isa = PBXGroup;
+			children = (
+				5C406B191D3E13E000794D90 /* Model */,
+				5C406B181D3E13D000794D90 /* VIew */,
+				5C406B171D3E13C200794D90 /* Controller */,
+			);
+			name = CardScan;
+			sourceTree = "<group>";
+		};
+		5C406B171D3E13C200794D90 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C406B221D3E166A00794D90 /* SCScanViewController.h */,
+				5C406B231D3E166A00794D90 /* SCScanViewController.m */,
+				5C406B251D3E178D00794D90 /* SCMyCodeViewController.h */,
+				5C406B261D3E178D00794D90 /* SCMyCodeViewController.m */,
+				5C406B281D3E18A300794D90 /* Scan_Card.h */,
+				5C406B291D3E18A300794D90 /* Scan_Card.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5C406B181D3E13D000794D90 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VIew;
+			sourceTree = "<group>";
+		};
+		5C406B191D3E13E000794D90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C406B1F1D3E15E500794D90 /* UIView+SDExtension.h */,
+				5C406B201D3E15E500794D90 /* UIView+SDExtension.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5C406B2B1D3E194500794D90 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				5C406B2C1D3E194500794D90 /* Info.plist */,
+				5C406B2D1D3E194500794D90 /* MASCompositeConstraint.h */,
+				5C406B2E1D3E194500794D90 /* MASCompositeConstraint.m */,
+				5C406B2F1D3E194500794D90 /* MASConstraint+Private.h */,
+				5C406B301D3E194500794D90 /* MASConstraint.h */,
+				5C406B311D3E194500794D90 /* MASConstraint.m */,
+				5C406B321D3E194500794D90 /* MASConstraintMaker.h */,
+				5C406B331D3E194500794D90 /* MASConstraintMaker.m */,
+				5C406B341D3E194500794D90 /* MASLayoutConstraint.h */,
+				5C406B351D3E194500794D90 /* MASLayoutConstraint.m */,
+				5C406B361D3E194500794D90 /* Masonry.h */,
+				5C406B371D3E194500794D90 /* MASUtilities.h */,
+				5C406B381D3E194500794D90 /* MASViewAttribute.h */,
+				5C406B391D3E194500794D90 /* MASViewAttribute.m */,
+				5C406B3A1D3E194500794D90 /* MASViewConstraint.h */,
+				5C406B3B1D3E194500794D90 /* MASViewConstraint.m */,
+				5C406B3C1D3E194500794D90 /* NSArray+MASAdditions.h */,
+				5C406B3D1D3E194500794D90 /* NSArray+MASAdditions.m */,
+				5C406B3E1D3E194500794D90 /* NSArray+MASShorthandAdditions.h */,
+				5C406B3F1D3E194500794D90 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				5C406B401D3E194500794D90 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				5C406B411D3E194500794D90 /* View+MASAdditions.h */,
+				5C406B421D3E194500794D90 /* View+MASAdditions.m */,
+				5C406B431D3E194500794D90 /* View+MASShorthandAdditions.h */,
+				5C406B441D3E194500794D90 /* ViewController+MASAdditions.h */,
+				5C406B451D3E194500794D90 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		5C406B511D3E194D00794D90 /* libqrencode */ = {
+			isa = PBXGroup;
+			children = (
+				5C406B521D3E194D00794D90 /* bitstream.c */,
+				5C406B531D3E194D00794D90 /* bitstream.h */,
+				5C406B541D3E194D00794D90 /* mask.c */,
+				5C406B551D3E194D00794D90 /* mask.h */,
+				5C406B561D3E194D00794D90 /* QRCodeGenerator.h */,
+				5C406B571D3E194D00794D90 /* QRCodeGenerator.m */,
+				5C406B581D3E194D00794D90 /* qrencode.c */,
+				5C406B591D3E194D00794D90 /* qrencode.h */,
+				5C406B5A1D3E194D00794D90 /* qrinput.c */,
+				5C406B5B1D3E194D00794D90 /* qrinput.h */,
+				5C406B5C1D3E194D00794D90 /* qrspec.c */,
+				5C406B5D1D3E194D00794D90 /* qrspec.h */,
+				5C406B5E1D3E194D00794D90 /* rscode.c */,
+				5C406B5F1D3E194D00794D90 /* rscode.h */,
+				5C406B601D3E194D00794D90 /* split.c */,
+				5C406B611D3E194D00794D90 /* split.h */,
+			);
+			name = libqrencode;
+			path = Masonry/libqrencode;
+			sourceTree = "<group>";
+		};
+		5CB9E4671D34E7E800F61041 /* SCContact */ = {
+			isa = PBXGroup;
+			children = (
+				5CB9E46E1D34E87000F61041 /* Model */,
+				5CB9E46D1D34E86000F61041 /* View */,
+				5CB9E46B1D34E84D00F61041 /* Controller */,
+			);
+			name = SCContact;
+			sourceTree = "<group>";
+		};
+		5CB9E46B1D34E84D00F61041 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5CB9E4681D34E84100F61041 /* SCContactViewController.h */,
+				5CB9E4691D34E84100F61041 /* SCContactViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5CB9E46D1D34E86000F61041 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5CB9E46E1D34E87000F61041 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		919897CA8EF5953B8C0E2870 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7730772F8E4B071F489C9F43 /* Pods_SmartVCard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2406CD6C5D7559555BCA2E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCFD74FF0CF113BC24E882DF /* Pods-SmartVCard.debug.xcconfig */,
+				C5B31B3324CFA6E4848DF179 /* Pods-SmartVCard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +738,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C1C342F1CC76A07001EFB1F /* Build configuration list for PBXNativeTarget "SmartVCard" */;
 			buildPhases = (
+				7759BDB8D376CDBF510766B6 /* [CP] Check Pods Manifest.lock */,
 				5C1C33FE1CC76A06001EFB1F /* Sources */,
 				5C1C33FF1CC76A06001EFB1F /* Frameworks */,
 				5C1C34001CC76A06001EFB1F /* Resources */,
+				5C5AE3A1E5D520A601611BC8 /* [CP] Embed Pods Frameworks */,
+				0C74618A28CFC9DE6A61A804 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,9 +837,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C15BA4C1D2F367B006666C0 /* MyCard.storyboard in Resources */,
+				5C15BA541D2F39A6006666C0 /* CardScanning.storyboard in Resources */,
 				5C1C34151CC76A07001EFB1F /* LaunchScreen.storyboard in Resources */,
+				5C15BA521D2F3909006666C0 /* User&Setting.storyboard in Resources */,
 				5C1C34121CC76A07001EFB1F /* Assets.xcassets in Resources */,
 				5C1C34101CC76A07001EFB1F /* Main.storyboard in Resources */,
+				5C15BA501D2F38B5006666C0 /* CardReceiveAndSend.storyboard in Resources */,
+				5C406AEA1D3780F800794D90 /* MBProgressHUD.bundle in Resources */,
+				5C406B6B1D3F1CFA00794D90 /* Login&Register.storyboard in Resources */,
+				5C406B461D3E194500794D90 /* Info.plist in Resources */,
+				5C15BA4E1D2F3845006666C0 /* CardCollect.storyboard in Resources */,
+				5C406B001D38D85900794D90 /* Setting.storyboard in Resources */,
+				5C406B6D1D3F50E600794D90 /* ModelGeneration.storyboard in Resources */,
+				5CB9E4661D34E68D00F61041 /* message.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +870,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C74618A28CFC9DE6A61A804 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartVCard/Pods-SmartVCard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C5AE3A1E5D520A601611BC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartVCard/Pods-SmartVCard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7759BDB8D376CDBF510766B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5C1C33FE1CC76A06001EFB1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C15BA711D3369AF006666C0 /* SCUserDefaults.m in Sources */,
+				5C406ADB1D37683100794D90 /* NSObject+MJKeyValue.m in Sources */,
+				5C406AD41D37683100794D90 /* MJArgument.m in Sources */,
+				5C406B471D3E194500794D90 /* MASCompositeConstraint.m in Sources */,
+				5C406B491D3E194500794D90 /* MASConstraintMaker.m in Sources */,
+				5C406B4B1D3E194500794D90 /* MASViewAttribute.m in Sources */,
+				5CB9E4641D34D2B800F61041 /* SCBehavior.m in Sources */,
+				5C406B4C1D3E194500794D90 /* MASViewConstraint.m in Sources */,
+				5C15BA681D333369006666C0 /* TabBarView.m in Sources */,
+				5C406AF41D3784BC00794D90 /* SCJsonUtil.m in Sources */,
+				5C406AD61D37683100794D90 /* MJMember.m in Sources */,
+				5C406AE21D377FB900794D90 /* SCStringUtil.m in Sources */,
+				5C15BA741D336E1E006666C0 /* SCVisualEffectView.m in Sources */,
+				5C406B4F1D3E194500794D90 /* View+MASAdditions.m in Sources */,
+				5C406ADA1D37683100794D90 /* NSObject+MJCoding.m in Sources */,
+				5C406ABE1D37672F00794D90 /* SCDBHelper.m in Sources */,
+				5C406AD91D37683100794D90 /* MJTypeEncoding.m in Sources */,
+				5C406B2A1D3E18A300794D90 /* Scan_Card.m in Sources */,
 				5C1C340D1CC76A07001EFB1F /* ViewController.m in Sources */,
+				5C15BA611D333224006666C0 /* SCTabBarController.m in Sources */,
+				5C406AD71D37683100794D90 /* MJMethod.m in Sources */,
+				5C406ABB1D37643D00794D90 /* UserInfo.m in Sources */,
+				5C406B031D38D97600794D90 /* SCSettingTableViewController.m in Sources */,
+				5C406B4E1D3E194500794D90 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				5C406B621D3E194D00794D90 /* bitstream.c in Sources */,
+				5C406AF11D3783EF00794D90 /* SCDeviceUtil.m in Sources */,
+				5C406AFE1D38D54700794D90 /* SCUserTableViewController.m in Sources */,
+				5C15BA6B1D3333BA006666C0 /* MKButton.m in Sources */,
+				5C406B641D3E194D00794D90 /* QRCodeGenerator.m in Sources */,
+				5C406B241D3E166A00794D90 /* SCScanViewController.m in Sources */,
+				5C406B151D3E110800794D90 /* SCUserHelpCell.m in Sources */,
+				5C406AD51D37683100794D90 /* MJIvar.m in Sources */,
+				5C406B481D3E194500794D90 /* MASConstraint.m in Sources */,
+				5C406B681D3E194D00794D90 /* rscode.c in Sources */,
+				5C406ADC1D37683100794D90 /* NSObject+MJMember.m in Sources */,
+				5C406AE91D3780F800794D90 /* MBProgressHUD+MJ.m in Sources */,
+				5C406B651D3E194D00794D90 /* qrencode.c in Sources */,
+				5C15BA771D336EAB006666C0 /* SCVisualEffectButton.m in Sources */,
+				5C406ADF1D377E0F00794D90 /* SCClassUtil.m in Sources */,
+				5C406B671D3E194D00794D90 /* qrspec.c in Sources */,
+				5C406B501D3E194500794D90 /* ViewController+MASAdditions.m in Sources */,
+				5C406B211D3E15E500794D90 /* UIView+SDExtension.m in Sources */,
+				5C406B631D3E194D00794D90 /* mask.c in Sources */,
+				5C406B661D3E194D00794D90 /* qrinput.c in Sources */,
+				5C406B061D3DD5B400794D90 /* SCAboutViewController.m in Sources */,
 				5C1C340A1CC76A07001EFB1F /* AppDelegate.m in Sources */,
+				5CB9E4611D34CF7E00F61041 /* SCAnimatedTransitioning.m in Sources */,
+				5C406AD81D37683100794D90 /* MJType.m in Sources */,
+				5C406B0F1D3E0E6400794D90 /* SCUserHelpListController.m in Sources */,
 				5C1C34071CC76A07001EFB1F /* main.m in Sources */,
+				5CB9E46A1D34E84100F61041 /* SCContactViewController.m in Sources */,
+				5C406B691D3E194D00794D90 /* split.c in Sources */,
+				5C406B4A1D3E194500794D90 /* MASLayoutConstraint.m in Sources */,
+				5C15BA6E1D333A66006666C0 /* Common.m in Sources */,
+				5C406B271D3E178D00794D90 /* SCMyCodeViewController.m in Sources */,
+				5C406B4D1D3E194500794D90 /* NSArray+MASAdditions.m in Sources */,
+				5C406AEB1D3780F800794D90 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,23 +1116,27 @@
 		};
 		5C1C34301CC76A07001EFB1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFD74FF0CF113BC24E882DF /* Pods-SmartVCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmartVCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "--.SmartVCard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
 		5C1C34311CC76A07001EFB1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5B31B3324CFA6E4848DF179 /* Pods-SmartVCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmartVCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "--.SmartVCard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
@@ -496,6 +1207,7 @@
 				5C1C34311CC76A07001EFB1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C1C34321CC76A07001EFB1F /* Build configuration list for PBXNativeTarget "SmartVCardTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +1216,7 @@
 				5C1C34341CC76A07001EFB1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C1C34351CC76A07001EFB1F /* Build configuration list for PBXNativeTarget "SmartVCardUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +1225,7 @@
 				5C1C34371CC76A07001EFB1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
