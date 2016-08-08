@@ -106,7 +106,7 @@ typedef enum : NSUInteger {
     self.hiddeButton = hiddeButton;
     [_effectView addSubview:hiddeButton];
     
-    UIImageView *disMissImagaView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"template_d"]];
+    UIImageView *disMissImagaView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"template_p"]];
     CGFloat height = disMissImagaView.image.size.height;
     CGFloat width  = disMissImagaView.image.size.width;
     disMissImagaView.frame = CGRectMake(Screenwidth/2 - width/2 , ScreenHeight - height - 10, width, height);

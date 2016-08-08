@@ -47,6 +47,7 @@ static NSString *kConversationChatter = @"ConversationChatter";
     [_tabBarView addButtonWithImage:@"btn_d_contact" HImage:@"btn_p_contact"];
     [_tabBarView addButtonWithImage:@"btn_d_receive_send" HImage:@"btn_p_send_receive"];
     [_tabBarView addButtonWithImage:@"btn_d_me" HImage:@"btn_p_me"];
+    _tabBarView.backgroundColor = [UIColor whiteColor];
     
 }
 

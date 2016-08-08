@@ -178,7 +178,7 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
-    [self navigationBarGradualChangeWithScrollView:scrollView titleView:self.titleView movableView:self.searchBarView offset:kScaleLength(190.5) color:KC01_57c2de];
+    [self navigationBarGradualChangeWithScrollView:scrollView titleView:self.titleView movableView:self.searchBarView offset:kScaleLength(190.5) color:[UIColor colorWithWhite:1.000 alpha:0.000]];
 }
 
 

@@ -14,7 +14,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(Backbtn)];
 
+}
+-(void)Backbtn{
+    [self.navigationController popViewControllerAnimated:YES];
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

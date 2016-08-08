@@ -83,6 +83,9 @@
                                 <rect key="frame" x="95" y="97" width="131" height="53"/>
                                 <color key="backgroundColor" red="0.74744788490879954" green="1" blue="0.38644505860084144" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="创建二维码"/>
+                                <connections>
+                                    <action selector="createBarcode:" destination="rSL-VJ-ak2" eventType="touchUpInside" id="1Ka-mb-zF9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

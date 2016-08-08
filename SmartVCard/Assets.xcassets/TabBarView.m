@@ -23,9 +23,9 @@
     if (self) {
         
         UIButton *centerButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [centerButton setImage:[UIImage imageNamed:@"template_p"] forState:UIControlStateNormal];
-        [centerButton setImage:[UIImage imageNamed:@"template_p"]forState:UIControlStateHighlighted];
-        UIImage *image = [UIImage imageNamed:@"template_p"];
+        [centerButton setImage:[UIImage imageNamed:@"template_d"] forState:UIControlStateNormal];
+        [centerButton setImage:[UIImage imageNamed:@"template_d"]forState:UIControlStateHighlighted];
+        UIImage *image = [UIImage imageNamed:@"template_d"];
         centerButton.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
         centerButton.imageView.contentMode = UIViewContentModeCenter;
         centerButton.clipsToBounds = NO;
