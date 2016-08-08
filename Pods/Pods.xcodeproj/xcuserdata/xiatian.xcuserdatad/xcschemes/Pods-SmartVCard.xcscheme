@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F0BE30FC7FD104736FA67AAF5D62F86"
+               BlueprintIdentifier = "D9B8030CB945CA68688441325865EB60"
                BuildableName = "Pods_SmartVCard.framework"
                BlueprintName = "Pods-SmartVCard"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F0BE30FC7FD104736FA67AAF5D62F86"
+            BlueprintIdentifier = "D9B8030CB945CA68688441325865EB60"
             BuildableName = "Pods_SmartVCard.framework"
             BlueprintName = "Pods-SmartVCard"
             ReferencedContainer = "container:Pods.xcodeproj">

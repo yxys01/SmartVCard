@@ -32,6 +32,8 @@ typedef void(^UpdateApp) (BOOL shouldUpdateApp);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initViews];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -83,120 +85,24 @@ typedef void(^UpdateApp) (BOOL shouldUpdateApp);
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if(alertView.tag==0) {
+        if(buttonIndex==1) {
+            NSURL *url= [NSURL URLWithString: self.trackViewUrl];
+            [[UIApplication sharedApplication] openURL:url];
+        }
+    } else if (alertView.tag==1) {
+        if(buttonIndex==1) {
+            [self logout];
+        }
+    }
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+-(void)logout{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Login&Register" bundle:nil];
+    [self presentViewController:[storyboard instantiateInitialViewController] animated:YES completion:nil];
+
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-//- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-//    if(alertView.tag==0) {
-//        if(buttonIndex==1) {
-//            NSURL *url= [NSURL URLWithString: self.trackViewUrl];
-//            [[UIApplication sharedApplication] openURL:url];
-//        }
-//    } else if (alertView.tag==1) {
-//        if(buttonIndex==1) {
-//            [self logout];
-//        }
-//    }
-//}
-//
-//- (void)logout {
-//    [MBProgressHUD showMessage:@"正在退出"];
-//    [CHHttpHelper doDelete:kApiNameLogout
-//                    params:[[NSDictionary alloc] init]
-//                   success:^(NSURLSessionDataTask *task, id response) {
-//                       [MBProgressHUD hideHUD];
-//                       NSNumber *state = response[@"State"];
-//                       if ([state integerValue]==kHttpReturnSucc) {
-//                           [[EaseMob sharedInstance].chatManager asyncLogoffWithUnbindDeviceToken:YES completion:^(NSDictionary *info, EMError *error) {
-//                               if (!error && info) {
-//                                   NSLog(@"退出成功");
-//                               }
-//                           } onQueue:nil];
-//                           [MBProgressHUD showSuccess:@"退出成功"];
-//                           [self logoutSucc];
-//                       } else {
-//                           [MBProgressHUD showError:@"退出出现异常"];
-//                       }
-//                   }
-//                   failure:^(NSURLSessionDataTask *task, NSError *error) {
-//                       [MBProgressHUD hideHUD];
-//                       //                       [MBProgressHUD showError:@"由于网络原因，退出失败"];
-//                       [self logoutSucc];
-//                   }];
-//}
-//
-//- (void)logoutSucc {
-//    [CHUserDefaults saveToken:nil];
-//    [CHUserDefaults setIsAutoLogin:false];
-//    ((CHAppDelegate *)[UIApplication sharedApplication].delegate).isTimerStart = false;
-//    if(((CHAppDelegate *)[UIApplication sharedApplication].delegate).isLoginPageExist) {
-//        [self dismissViewControllerAnimated:NO completion:nil];
-//    } else {
-//        ((CHAppDelegate *)[UIApplication sharedApplication].delegate).isLoginPageExist = true;
-//        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Login&Register" bundle:nil];
-//        [self presentViewController:[storyBoard instantiateInitialViewController] animated:YES completion:nil];
-//    }
-//}
 
 @end

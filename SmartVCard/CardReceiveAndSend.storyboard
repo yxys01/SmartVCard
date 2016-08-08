@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0t7-rf-Qzb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0t7-rf-Qzb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -21,10 +21,10 @@
             </objects>
             <point key="canvasLocation" x="-596" y="333"/>
         </scene>
-        <!--View Controller-->
+        <!--Card Receive And Send View Controller-->
         <scene sceneID="a9j-yV-TnO">
             <objects>
-                <viewController id="3v4-Ru-IHz" sceneMemberID="viewController">
+                <viewController id="3v4-Ru-IHz" customClass="SCCardReceiveAndSendViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GaK-ts-Kfk"/>
                         <viewControllerLayoutGuide type="bottom" id="8dm-S5-hFF"/>
@@ -33,15 +33,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROX-Dy-Duk">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROX-Dy-Duk">
                                 <rect key="frame" x="20" y="81" width="280" height="192"/>
                                 <color key="backgroundColor" red="0.98511292322908883" green="1" blue="0.39837011529700128" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="发送名片"/>
+                                <color key="tintColor" red="0.4049352698" green="1" blue="0.1359126913" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="rSL-VJ-ak2" kind="push" id="qDk-6J-Y0c"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epo-tq-pes">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epo-tq-pes">
                                 <rect key="frame" x="20" y="281" width="280" height="192"/>
                                 <color key="backgroundColor" red="0.40493526984085615" green="1" blue="0.1359126912550972" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="接受名片"/>
                                 <connections>
                                     <segue destination="ki3-0e-h15" kind="push" id="csK-A2-UBJ"/>
                                 </connections>
@@ -56,18 +58,48 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZYN-rZ-sIh"/>
+                    <connections>
+                        <outlet property="ReceiveBtn" destination="Epo-tq-pes" id="cjD-Id-mBz"/>
+                        <outlet property="SendBtn" destination="ROX-Dy-Duk" id="ahg-1U-0Kz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgv-RQ-5dq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-155" y="333"/>
         </scene>
+        <!--Card Send View Controller-->
+        <scene sceneID="Bvd-Ml-mp5">
+            <objects>
+                <viewController id="rSL-VJ-ak2" customClass="SCCardSendViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A2c-Ad-t1K"/>
+                        <viewControllerLayoutGuide type="bottom" id="T4T-in-cKG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sCC-u8-B5s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZX-kM-3wc">
+                                <rect key="frame" x="95" y="97" width="131" height="53"/>
+                                <color key="backgroundColor" red="0.74744788490879954" green="1" blue="0.38644505860084144" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="创建二维码"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gb2-Mh-Xi6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ALb-9m-OOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-155" y="1099"/>
+        </scene>
         <!--CardScanning-->
         <scene sceneID="J54-sp-nqe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1a4-Mp-ihj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="CardScanning" id="ki3-0e-h15" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="5Gv-Ph-Htj"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1a4-Mp-ihj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="382.5" y="301"/>
         </scene>

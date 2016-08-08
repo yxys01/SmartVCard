@@ -23,9 +23,9 @@
     if (self) {
         
         UIButton *centerButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [centerButton setImage:[UIImage imageNamed:@"mn_add"] forState:UIControlStateNormal];
-        [centerButton setImage:[UIImage imageNamed:@"mn_add"]forState:UIControlStateHighlighted];
-        UIImage *image = [UIImage imageNamed:@"mn_add"];
+        [centerButton setImage:[UIImage imageNamed:@"template_p"] forState:UIControlStateNormal];
+        [centerButton setImage:[UIImage imageNamed:@"template_p"]forState:UIControlStateHighlighted];
+        UIImage *image = [UIImage imageNamed:@"template_p"];
         centerButton.bounds = CGRectMake(0, 0, image.size.width, image.size.height);
         centerButton.imageView.contentMode = UIViewContentModeCenter;
         centerButton.clipsToBounds = NO;
@@ -145,8 +145,7 @@
     MKButton *btn = [self.selectButtons objectAtIndex:0];
     [self buttonClick:btn];
     self.frontButton = btn;
-    UIImage *image = [UIImage imageNamed:@"mn_add"];
-    CGFloat h = self.bounds.size.height/2;
+    CGFloat h = self.bounds.size.height/2 ;
     CGFloat w = self.frame.size.width;
     _centerButton.center = CGPointMake(w * 0.5,h);
 }

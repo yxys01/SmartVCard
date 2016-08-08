@@ -101,12 +101,12 @@ typedef enum : NSUInteger {
     
     UIButton *hiddeButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [hiddeButton setBackgroundColor:[UIColor whiteColor]];
-    hiddeButton.frame = CGRectMake(0, ScreenHeight - 44, Screenwidth, 44);
+    hiddeButton.frame = CGRectMake(0, ScreenHeight - 60, Screenwidth, 60);
     [hiddeButton addTarget:self action:@selector(hideClick:) forControlEvents:UIControlEventTouchUpInside];
     self.hiddeButton = hiddeButton;
     [_effectView addSubview:hiddeButton];
     
-    UIImageView *disMissImagaView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mn_cross"]];
+    UIImageView *disMissImagaView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"template_d"]];
     CGFloat height = disMissImagaView.image.size.height;
     CGFloat width  = disMissImagaView.image.size.width;
     disMissImagaView.frame = CGRectMake(Screenwidth/2 - width/2 , ScreenHeight - height - 10, width, height);
@@ -128,7 +128,7 @@ typedef enum : NSUInteger {
     
     
     
-    SCVisualEffectButton *buttonLife = [SCVisualEffectButton effectButtonWithImage:[UIImage imageNamed:@"mn_add_life"] Title:@"生活圈" target:self selector:@selector(lifeClick:)];
+    SCVisualEffectButton *buttonLife = [SCVisualEffectButton effectButtonWithImage:[UIImage imageNamed:@"template_build-1"] Title:@"模板生成" target:self selector:@selector(lifeClick:)];
     buttonLife.bounds = buttonNote.bounds;
     //buttonLife.center = beganPoint;
     buttonLife.center = CGPointMake(beganPoint.x, beganPoint.y - 50);
@@ -138,7 +138,7 @@ typedef enum : NSUInteger {
     //pic
     
     
-    SCVisualEffectButton *buttonPic = [SCVisualEffectButton effectButtonWithImage:[UIImage imageNamed:@"mn_add_photo"] Title:@"照片墙" target:self selector:@selector(picClick:)];
+    SCVisualEffectButton *buttonPic = [SCVisualEffectButton effectButtonWithImage:[UIImage imageNamed:@"custom_template"] Title:@"自定义" target:self selector:@selector(picClick:)];
     buttonPic.bounds = buttonNote.bounds;
     buttonPic.center = CGPointMake(beganPoint.x, beganPoint.y - 50);
     _buttonPic = buttonPic;
@@ -168,15 +168,11 @@ typedef enum : NSUInteger {
         [self hideWithCick:VisualeffectViewLife];
     }
 }
-
 - (void)picClick:(SCVisualEffectButton *)button {
-//    if([FamilyInfo sharedInstance].ID==nil) {
-//        [MBProgressHUD showError:@"请先创建或加入家庭"];;
-//        return;
-//    }else if (self.clickPicBlock != nil) {
-//        //self.clickPicBlock(button);
-//        [self hideWithCick:VisualeffectViewPic];
-//    }
+    if (self.clickPicBlock) {
+        //self.clickPicBlock(button);
+        [self hideWithCick:VisualeffectViewPic];
+    }
 }
 
 - (void)selectedNote:(clickNoteBlock)block {

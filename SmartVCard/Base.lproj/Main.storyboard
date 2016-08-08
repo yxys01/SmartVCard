@@ -16,10 +16,10 @@
             </objects>
             <point key="canvasLocation" x="577.5" y="863"/>
         </scene>
-        <!--CardCollect-->
+        <!--CardContact-->
         <scene sceneID="zuq-cX-WkA">
             <objects>
-                <viewControllerPlaceholder storyboardName="CardCollect" id="Wwq-ea-I4A" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="CardContact" id="Wwq-ea-I4A" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="FZa-5y-5nV"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hpu-SQ-WYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -49,7 +49,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="PQM-ma-lrG">
             <objects>
-                <tabBarController id="b0C-K7-f6n" customClass="SCTabBarController" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Main" id="b0C-K7-f6n" customClass="SCTabBarController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="vBo-EO-zZu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="xMJ-ip-E1K">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hhW-Xf-12k">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--My Card View Controller-->
         <scene sceneID="ewe-Ws-nfp">
             <objects>
-                <viewController id="xMJ-ip-E1K" sceneMemberID="viewController">
+                <viewController id="xMJ-ip-E1K" customClass="SCMyCardViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4KR-jP-gEX"/>
                         <viewControllerLayoutGuide type="bottom" id="KO7-wz-fFQ"/>
@@ -17,39 +17,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NgR-ed-rnt">
-                                <rect key="frame" x="0.0" y="79" width="320" height="156"/>
-                                <color key="backgroundColor" red="1" green="0.9958419137918737" blue="0.8357763376544769" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Imb-mz-KZz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="template_d1" translatesAutoresizingMaskIntoConstraints="NO" id="REY-gJ-a74">
+                                <rect key="frame" x="20" y="145" width="280" height="220"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3g-ex-Bj9">
+                                <rect key="frame" x="69" y="459" width="49" height="30"/>
+                                <color key="backgroundColor" red="0.98935385520443397" green="1" blue="0.23606971554009226" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="正面"/>
+                                <connections>
+                                    <action selector="nextBtnClick:" destination="xMJ-ip-E1K" eventType="touchUpInside" id="UqL-gq-jK3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyF-nV-Z9D">
+                                <rect key="frame" x="199" y="459" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.97470310286437301" green="1" blue="0.21468314821768331" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="背面"/>
+                                <connections>
+                                    <action selector="preBtnClick:" destination="xMJ-ip-E1K" eventType="touchUpInside" id="EAl-NA-9mH"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的名片：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgf-aF-4lA">
-                                <rect key="frame" x="20" y="14" width="98" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.33857985909999999" blue="0.59964335570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="20" y="45" width="121" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.090808285675941791" blue="0.1856555143349522" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IH-Q3-Z3w">
-                                <rect key="frame" x="20" y="352" width="129" height="69"/>
-                                <color key="backgroundColor" red="1" green="0.8646784684665747" blue="0.28684092789115834" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="模板生成"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名片设计：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8Y-Pm-9Ut">
-                                <rect key="frame" x="20" y="260" width="98" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.33857985909999999" blue="0.59964335570000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uns-bh-Fhk">
-                                <rect key="frame" x="171" y="352" width="129" height="69"/>
-                                <color key="backgroundColor" red="1" green="0.86085317749061674" blue="0.20242669136322111" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="自定义"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.59343020371704158" green="1" blue="0.54387995206568041" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HNk-gT-IrC"/>
+                    <connections>
+                        <outlet property="CardView" destination="REY-gJ-a74" id="JuX-a4-evg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qe-Hy-9cM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-62" y="172"/>
+            <point key="canvasLocation" x="-146" y="99"/>
+        </scene>
+        <!--My Card Design View Controller-->
+        <scene sceneID="a4t-Xw-MaR">
+            <objects>
+                <navigationController id="hhW-Xf-12k" customClass="SCMyCardDesignViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HnX-AO-ieX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nst-Mn-i2W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xMJ-ip-E1K" kind="relationship" relationship="rootViewController" id="ztC-46-Zyj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nr0-gv-Ro2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-598" y="99"/>
+        </scene>
+        <!--模版-->
+        <scene sceneID="gOh-qM-hyY">
+            <objects>
+                <collectionViewController id="zT0-Sg-MKP" customClass="SCMyCardDesignCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="zhl-uU-Gu4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2wJ-mv-1NY">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bs4-dg-OID">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="zT0-Sg-MKP" id="MR8-GV-zNJ"/>
+                            <outlet property="delegate" destination="zT0-Sg-MKP" id="i98-Ze-Tsd"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="模版" id="5Yi-PN-397"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="spd-FH-0jQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="99"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="422" height="676"/>
+        <image name="template_d1" width="400" height="243"/>
+    </resources>
 </document>

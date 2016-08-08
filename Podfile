@@ -1,7 +1,6 @@
 platform :ios , '8.0'
 use_frameworks!
 target 'SmartVCard' do
-pod 'AFNetworking', '~> 2.0'
 pod 'SDWebImage'
 pod 'SWTableViewCell', '~> 0.3.7'
 pod 'AMap2DMap', '~> 3.2.0'

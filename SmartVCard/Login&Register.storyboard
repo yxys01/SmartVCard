@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GfC-lT-ByF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7G8-3p-Hcl">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -104,6 +104,25 @@
             </objects>
             <point key="canvasLocation" x="405" y="315"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="khM-K8-jXU">
+            <objects>
+                <viewController id="7G8-3p-Hcl" customClass="SCLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XNV-Mm-Xqy"/>
+                        <viewControllerLayoutGuide type="bottom" id="UeM-FQ-0v5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="itu-0F-DHh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EHb-x6-zuX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o2K-Al-0d7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1839" y="1257"/>
+        </scene>
         <!--登录-->
         <scene sceneID="j3P-vD-UMq">
             <objects>
@@ -113,14 +132,14 @@
                         <viewControllerLayoutGuide type="bottom" id="CAv-N0-ubf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Jzi-36-3Li">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2h7-To-iT7">
-                                <rect key="frame" x="5" y="89" width="310" height="85"/>
+                                <rect key="frame" x="5" y="89" width="590" height="85"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PbJ-RM-UDx">
-                                        <rect key="frame" x="1" y="1" width="308" height="41"/>
+                                        <rect key="frame" x="1" y="1" width="588" height="41"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -134,7 +153,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgD-9Q-3Yf">
-                                        <rect key="frame" x="1" y="43" width="308" height="41"/>
+                                        <rect key="frame" x="1" y="43" width="588" height="41"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="textColor" white="0.59999999999999998" alpha="1" colorSpace="calibratedWhite"/>
@@ -160,7 +179,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9T-je-tAj">
-                                <rect key="frame" x="32" y="239" width="256" height="41"/>
+                                <rect key="frame" x="60" y="239" width="480" height="41"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.5" height="0.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="Jz0-SH-NWs"/>
@@ -176,7 +195,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XR9-63-F1f">
-                                <rect key="frame" x="235" y="193" width="60" height="30"/>
+                                <rect key="frame" x="515" y="193" width="60" height="30"/>
                                 <state key="normal" title="忘记密码">
                                     <color key="titleColor" red="1" green="0.44705882349999998" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -229,11 +248,11 @@
                         <viewControllerLayoutGuide type="bottom" id="BP2-YY-8U2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XOI-ke-N5E">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7xH-fO-nJF">
-                                <rect key="frame" x="15" y="89" width="290" height="42"/>
+                                <rect key="frame" x="27" y="89" width="546" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -241,21 +260,15 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="18" y="89" width="364" height="42"/>
-                                </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击下一步，系统会默认发送短信到你手机，请查收" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ur2-uV-nMG">
-                                <rect key="frame" x="15" y="146" width="276" height="15"/>
+                                <rect key="frame" x="27" y="146" width="276" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="18" y="146" width="276" height="15"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEz-eW-8BV">
-                                <rect key="frame" x="32" y="197" width="256" height="40"/>
+                                <rect key="frame" x="60" y="197" width="480" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="T6E-ot-AaF"/>
                                 </constraints>
@@ -263,16 +276,13 @@
                                 <state key="normal" title="下一步" backgroundImage="Launch_button_back">
                                     <color key="titleColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="40" y="197" width="320" height="40"/>
-                                </variation>
                                 <connections>
                                     <action selector="nextButtonClicked:" destination="Tjd-ch-nIQ" eventType="touchUpInside" id="EhF-AM-QRh"/>
                                     <segue destination="syC-h6-9Bu" kind="push" id="iwY-LX-c6P"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zi8-Gc-KV0">
-                                <rect key="frame" x="0.0" y="247" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="247" width="600" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="已阅读并同意" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnH-gz-utM">
                                         <rect key="frame" x="60" y="0.0" width="72" height="15"/>
@@ -305,9 +315,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="wCr-5F-VQQ"/>
                                 </constraints>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="247" width="400" height="50"/>
-                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.95999999999999996" alpha="1" colorSpace="calibratedWhite"/>
@@ -348,11 +355,11 @@
                         <viewControllerLayoutGuide type="bottom" id="0T9-tQ-ML2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="psJ-d4-dxb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lgH-E5-NxQ" customClass="CHVerifyField">
-                                <rect key="frame" x="16" y="89" width="288" height="42"/>
+                                <rect key="frame" x="30" y="89" width="540" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -361,12 +368,9 @@
                                 <color key="textColor" red="0.4431372549" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="89" width="360" height="42"/>
-                                </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpl-Rx-GFK">
-                                <rect key="frame" x="32" y="180" width="256" height="40"/>
+                                <rect key="frame" x="60" y="180" width="480" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4lg-me-ktU"/>
                                 </constraints>
@@ -374,9 +378,6 @@
                                 <state key="normal" title="下一步" backgroundImage="Launch_button_back">
                                     <color key="titleColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="40" y="180" width="320" height="40"/>
-                                </variation>
                                 <connections>
                                     <action selector="next:" destination="syC-h6-9Bu" eventType="touchUpInside" id="Hdy-V4-BUo"/>
                                 </connections>
@@ -412,11 +413,11 @@
                         <viewControllerLayoutGuide type="bottom" id="gw2-op-3me"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1uE-XS-bnH" customClass="UIControl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ni0-EZ-WBI">
-                                <rect key="frame" x="32" y="171" width="256" height="40"/>
+                                <rect key="frame" x="60" y="171" width="480" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="T5s-0M-WFn"/>
                                 </constraints>
@@ -425,15 +426,12 @@
                                     <color key="titleColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="40" y="171" width="320" height="40"/>
-                                </variation>
                                 <connections>
                                     <action selector="nextButtonClick:" destination="l1D-be-s0H" eventType="touchUpInside" id="T6k-dJ-glJ"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="6-16位数字或字母的组合" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3mB-cU-zsb">
-                                <rect key="frame" x="16" y="89" width="288" height="42"/>
+                                <rect key="frame" x="30" y="89" width="540" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -442,9 +440,6 @@
                                 <color key="textColor" white="0.59999999999999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="89" width="360" height="42"/>
-                                </variation>
                                 <connections>
                                     <outlet property="delegate" destination="l1D-be-s0H" id="SDc-g2-bc6"/>
                                 </connections>

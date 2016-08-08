@@ -13,7 +13,9 @@
 #import "SCAnimatedTransitioning.h"
 #import "SCVisualEffectView.h"
 #import "MKButton.h"
-
+#import "SCMyCardDesignCollectionViewController.h"
+#import "SCMyCardDesignViewLayout.h"
+#import "SCCustomDesignTableViewController.h"
 @interface SCTabBarController ()<tabBarViewDelegate,UINavigationBarDelegate,UIViewControllerTransitioningDelegate>
 
 @property (nonatomic, strong) TabBarView *tabBarView;
@@ -79,33 +81,32 @@ static NSString *kConversationChatter = @"ConversationChatter";
     SCVisualEffectView *view = [[SCVisualEffectView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
     self.transitioningDelegate = self;
-//    __weak typeof(SCTabBarController *) wSelf = self;
-//    [view selectedlife:^(SCVisualEffectButton *btn) {
-//                CHCircleAddViewController *vc = [[CHCircleAddViewController alloc] initWithNibName:@"CHCircleAddViewController" bundle:nil];
-//                vc.effectView = view;
-//                CHNaviController *navigationController = [[CHNaviController alloc] initWithRootViewController:vc];
-//                [wSelf presentViewController:navigationController animated:YES completion:NULL];
-//        
-//        UINavigationController *nav = [[UIStoryboard storyboardWithName:@"FamilyCircleAdd" bundle:nil] instantiateInitialViewController];
-//        
-//        CHCircleAddViewController *vc = nav.viewControllers[0];
-//        vc.effectView = view;
-//        UIImage *image = [UIImage imageWithColor:[UIColor colorWithRed:0.439 green:0.824 blue:0.820 alpha:0.899] andSize:(CGSize){5,44}];
-//        [nav.navigationBar setBackgroundImage:[UIImage resizedImage:image] forBarMetrics:(UIBarMetricsDefault)];
-//        nav.transitioningDelegate = wSelf;
-//        [wSelf presentViewController:nav animated:YES completion:nil];
-//    }];
-//    
-//    [view selectedPic:^(SCVisualEffectButton *btn) {
-//        CHPicUploadEditController *vc = [[CHPicUploadEditController alloc] init];
-//        //vc.effectView = view;
-//        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
-//        //UIImage *image = [UIImage imageWithColor:[UIColor colorWithRed:0.961 green:0.647 blue:0.000 alpha:0.899] andSize:(CGSize){5,44}];
-//        //[navi.navigationBar setBackgroundImage:[UIImage resizedImage:image] forBarMetrics:(UIBarMetricsDefault)];
-//        //navi.transitioningDelegate = wSelf;
-//        [self presentViewController:navi animated:YES completion:nil];//视图切换
-//    }];
+    __weak typeof(SCTabBarController *) wSelf = self;
+    [view selectedlife:^(SCVisualEffectButton *btn) {
+        
+        SCMyCardDesignViewLayout *layout = [[SCMyCardDesignViewLayout alloc]initWithAnim:HJCarouselAnimLinear];
+        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        layout.itemSize = CGSizeMake(250, 250);
+        
+        SCMyCardDesignCollectionViewController  *vc = [[SCMyCardDesignCollectionViewController alloc]initWithCollectionViewLayout:layout];
+        
+
+        vc.effectView = view;
+        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+        [wSelf presentViewController:nav animated:YES completion:nil];
+
+    }];
+//
+    [view selectedPic:^(SCVisualEffectButton *btn) {
+
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ModelGeneration" bundle:nil];
+        SCCustomDesignTableViewController *vc =[storyboard instantiateInitialViewController] ;
+        vc.effectView = view;
+        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+        [wSelf presentViewController:nav animated:YES completion:nil];        
+    }];
 }
+
 
 #pragma mark transitionAnimator delegate
 
@@ -117,7 +118,7 @@ static NSString *kConversationChatter = @"ConversationChatter";
 //-(void)registerNotifications
 //{
 //    [self unregisterNotifications];
-//    
+//
 //    [[EaseMob sharedInstance].chatManager addDelegate:self delegateQueue:nil];
 //    [[EaseMob sharedInstance].callManager addDelegate:self delegateQueue:nil];
 //}

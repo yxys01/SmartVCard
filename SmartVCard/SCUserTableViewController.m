@@ -10,7 +10,8 @@
 #import "UserInfo.h"
 #import "SCUserDefaults.h"
 #import "MBProgressHUD+MJ.h"
-
+#import "SCSettingTableViewController.h"
+#import "SCTemplateMallViewController.h"
 @interface SCUserTableViewController()<UINavigationControllerDelegate>
 
 
@@ -35,13 +36,25 @@
  */
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if(indexPath.section == 0 && indexPath.row ==0){
+        
+    }else if(indexPath.section == 2){
+        
+        self.hidesBottomBarWhenPushed = YES;
+        SCTemplateMallViewController *vc = [[UIStoryboard storyboardWithName:@"Template_Mall" bundle:nil]instantiateInitialViewController];
+        [self.navigationController pushViewController:vc animated:YES];
+        self.hidesBottomBarWhenPushed = NO;
     
-    
-
+    }else  if(indexPath.section == 3)
+    {
+        SCSettingTableViewController *vc = [[UIStoryboard storyboardWithName:@"Setting" bundle:nil]instantiateInitialViewController];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 -(void)initViews{
-    
+    self.tableView.tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 5, 20)];
 }
 
 

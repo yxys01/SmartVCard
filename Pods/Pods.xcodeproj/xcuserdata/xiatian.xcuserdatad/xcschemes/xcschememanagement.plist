@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>ActionSheetPicker-3.0.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,32 +47,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>029F3F80D4D26B8ADC527C736D94060F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1F0BE30FC7FD104736FA67AAF5D62F86</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>23CF27B2BA6AC7125EFFEDA8C5AA819F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3BDF87A8DCBCEA0422BB46ACB4AE58B3</key>
+		<key>5189808BFCE4C9B3047AA1D9A0DB36BF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4878C70B21CA37D7CB8A476BF986741B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>55361243E21E6793BB8BD0C9DB963F4F</key>
+		<key>9840BCE55EE7DCE921A0C8581C857059</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -93,6 +73,16 @@
 			<true/>
 		</dict>
 		<key>C075538D9F7E7C015EB69FEFC214855A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D9B8030CB945CA68688441325865EB60</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBAA0CCC655C9CD50D1EE1C724382856</key>
 		<dict>
 			<key>primary</key>
 			<true/>
